@@ -36,6 +36,69 @@
     </section>
     <!-- ------------------------>
 
+    <!-- ARTIST HOME PAGE -->
+    <section id="artistHomePage">
+        <div class="header d-flex justify-content-center align-items-center">
+            <h2 class="h2 text-logo ml-auto mr-auto artistName"></h2>
+            <div class="dropdown text-right d-flex">
+                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <img src="app/images/Vector.svg" alt="" />
+                </button>
+                <div class="dropdown-menu bg-custom-bg-yellow-dark text-center" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#artistHomePage">Home</a>
+                    <a class="dropdown-item" href="#artistItemsPage">Items</a>
+                    <a class="dropdown-item" href="#auctionPage">Auctions</a>
+                </div>
+            </div>
+        </div>
+        <div class="logoWithPosition">
+            <a href="#landingPage">
+                <img src="app/images/Logo.png" alt="" class="img-fluid" /></a>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row justify-content-around income-tables">
+                <div class="col-5 marginbottomDivsLeft total-items-sold bg-custom-bg-yellow-dark text-center my-4">
+                    <p class="my-2 text-white">Total Items Sold</p>
+                    <p class="number-of-items-sold mb-0 text-white"></p>
+                </div>
+                <div class="col-5 marginbottomDivsRight total-income bg-custom-bg-yellow-dark text-center my-4">
+                    <p class="my-2 text-white">Total Income</p>
+                    <p class="money-income mb-0 text-white"></p>
+                </div>
+                <div class="col-11 total-income liveAuctioningDiv bg-custom-bg-orange-dark text-center mb-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <a href="#auctionPage">
+                            <span class="my-2 text-white d-flex justify-content-center">Live Auctioning Item</span>
+                            <span class="auctioning-money-income mb-0 text-white d-flex justify-content-center"></span>
+                            <span class="my-2 text-white d-flex justify-content-center">current bid</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <p class="my-3 chartTitle">Display my income for last</p>
+            <div class="d-flex justify-content-between mb-4">
+                <button id="last7" class="btn bg-custom-bg-yellow-dark text-white my-3 btnDays">
+                    last 7
+                </button>
+                <button id="last14" class="btn bg-custom-bg-yellow-dark text-white my-3 btnDays">
+                    last 14
+                </button>
+                <button id="last30" class="btn bg-custom-bg-yellow-dark text-white my-3 btnDays">
+                    last 30
+                </button>
+            </div>
+            <div class="canvasDiv">
+                <canvas id="myCanvas"></canvas>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------>
+
+
 
 
 
@@ -47,7 +110,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./data/data.js"></script>
     <script src="./app/js/helpers.js"></script>
-    <script defer src="./app/js/handleRoute.js"></script>
+    <script defer src="./app/js/Router.js"></script>
 
     <script src="./app/js/artistItemsPage.js"></script>
     <script src="./app/js/landingPage.js"></script>
