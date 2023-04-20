@@ -1,6 +1,5 @@
 const itemTypes = ['painting', 'sculpture', 'digital', 'custom']
 
-
 const items = [
     {
         "id": 1,
